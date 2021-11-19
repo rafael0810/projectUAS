@@ -1,0 +1,157 @@
+a {
+  text-decoration: none !important;
+  font-family: "Open Sans", sans-serif;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+}
+
+.nav-item:hover {
+  background-color: #050325;
+}
+
+header img {
+  vertical-align: middle;
+  border-style: none;
+  width: 100%;
+  height: auto;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer {
+  color: white;
+}
+
+footer li > a {
+  color: white;
+}
+
+footer a {
+  color: white;
+}
+
+.register {
+  text-align: justify;
+  padding: 100px;
+}
+
+.sign {
+  padding: 100px;
+  text-align: justify;
+}
+
+.transfer {
+  text-align: center;
+}
+
+.trfbank {
+  padding: 80px;
+  text-align: center;
+}
+
+.trfrek {
+  padding: 80px;
+  text-align: center;
+}
+
+.detail {
+  text-align: center;
+}
+
+.Premium {
+  padding: 3%;
+  text-align: center;
+}
+
+.Redeem {
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.premiumregis {
+  outline: auto;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-top: 1%;
+  margin-right: 30%;
+  margin-left: 30%;
+}
+
+.bayar {
+  background-color: white;
+  text-align: center;
+}
+
+.form {
+  background-color: white;
+  width: 420px;
+  border: 1px solid black;
+  padding: 50px;
+  margin: auto;
+}
+
+.topup {
+  width: 400px;
+  border: 1px solid black;
+  padding: 30px;
+  margin: auto;
+}
+
+.container {
+  text-align: center;
+}
+
+.rcorners {
+  border-radius: 20px;
+  background: #e1e2e0;
+  position: center;
+  padding: 50px; 
+  width: fit-content;
+  height: fit-content;
+  margin-left: auto;
+  margin-right: auto;  
+}
+.rcorners1 {
+  border-radius: 20px;
+  background: #e1e2e0;
+  position: center;
+  padding: 30px; 
+  width: fit-content;
+  height: fit-content;
+  margin-left: auto;
+  margin-right: auto;  
+}
+
+.rcorners2 {
+  border-radius: 20px;
+  background: #e1e2e0;
+  position: center;
+  padding: 20px; 
+  width: 480px;
+  height: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  margin-bottom: auto;  
+}
+
+.rcorners3 {
+  border-radius: 20px;
+  border-style: solid;
+  background: #d1d3d1;
+  position: center;
+  padding: 30px; 
+  width: fit-content;
+  height: fit-content;
+  margin-left: auto;
+  margin-right: auto;  
+}
+
+.profile {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
