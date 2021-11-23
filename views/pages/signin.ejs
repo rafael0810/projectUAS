@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CASI || Homepage</title>
+    <link rel="stylesheet" href="/css/signin.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+  <body>
+    <%- include('../layouts/navbar.ejs'); %>
+    <div class="wrapper fadeInDown">
+      <div id="formContent">
+        <!-- Tabs Titles -->
+
+        <!-- Icon -->
+        <div class="fadeIn first">
+          <img src="/img/CASI.png" id="icon" alt="User Icon" />
+        </div>
+
+        <!-- Login Form -->
+        <form method="post" action="/user/login">
+          <input
+            type="text"
+            id="login"
+            class="fadeIn second"
+            name="email"
+            placeholder="oggyno@gmail.com"
+          />
+          <input
+            type="password"
+            id="password"
+            class="fadeIn third"
+            name="password"
+            placeholder="Password"
+          />
+          <input type="submit" class="fadeIn fourth" value="Log In" />
+          <br />
+          <% if(locals.error) { %>
+          <span class="text-danger pl-2" style="font-size: 2.2vh"
+            ><%= error %></span
+          >
+          <% } %>
+        </form>
+
+        <!-- Remind Passowrd -->
+        <div id="formFooter">
+          <a class="underlineHover" href="#">Forgot Password?</a>
+        </div>
+      </div>
+    </div>
+    <%- include('../layouts/footer.ejs'); %>
+  </body>
+</html>

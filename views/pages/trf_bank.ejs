@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CASI || Homepage</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+      .card-body {
+        color: black;
+      }
+      a {
+        text-decoration: none !important;
+      }
+    </style>
+  </head>
+  <body>
+    <%- include('../layouts/navbar.ejs'); %>
+    <div style="text-align: center; padding-top: 1%">
+      <h3>Saldo :</h3>
+      <label id="Saldo"></label>
+    </div>
+    <br />
+
+    <form class="topup" action="">
+      <div class="trfbank">
+        <div style="padding-bottom: 3%">
+          <h3>Transfer Antar Bank</h3>
+        </div>
+        <div style="line-height: 5%">
+          <div style="margin-right: 12%">
+            <p>Bank :</p>
+          </div>
+          <div style="margin-right: 5%">
+            <select name="" id="">
+              <option value="">001 - BCA</option>
+              <option value="">002 - BRI</option>
+              <option value="">003 - BNI</option>
+              <option value="">004 - Mandiri</option>
+            </select>
+          </div>
+        </div>
+        <div style="padding: 1%">
+          <label for="norek">Nomor Rekening Tujuan : </label>
+        </div>
+        <input type="text" name="" id="norek" maxlength="15" />
+        <br />
+        <div style="padding: 1%">
+          <div style="margin-right: 7%">
+            <label for="Saldo">Jumlah saldo : </label>
+          </div>
+          <div>
+            <input type="text" name="trf_bank" id="inputSaldo" required />
+          </div>
+        </div>
+        <br />
+        <div style="margin-right: 5%">
+          <a class="btn btn-primary" href="/transfer" role="button">Back</a>
+          <button id="btnTrf" class="btn btn-primary">Send</button>
+        </div>
+      </div>
+    </form>
+    <%- include('../layouts/footer.ejs'); %>
+    <script src="/js/trf_bank.js"></script>
+  </body>
+</html>

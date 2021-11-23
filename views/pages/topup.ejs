@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CASI || Homepage</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+      .card-body {
+        color: black;
+      }
+      a {
+        text-decoration: none !important;
+      }
+    </style>
+  </head>
+  <body>
+    <%- include('../layouts/navbar.ejs'); %>
+    <div style="text-align: center">
+      <h2>Selamat datang di area Top up</h2>
+      <p>Top Up Dengan Casi sangat aman dan nyaman</p>
+
+      <div style="text-align: center">
+        <h3>Saldo :</h3>
+        <label name="saldo" id="saldo"></label>
+      </div>
+      <form method="post" class="topup" action="/index/topup">
+        <div style="padding-right: 7%">
+          <label for="saldo">Masukkan jumlah saldo : </label>
+        </div>
+        <input name="inputsaldo" id="inputsaldo" type="text" required />
+        <br /><br />
+        <div style="padding-right: 32%">
+          <label for="Bank">Pilihan Bank:</label>
+          <br />
+          <select name="Bank" id="Bank">
+            <option value="BNI">BNI</option>
+            <option value="BCA">BCA</option>
+            <option value="Mandiri">Mandiri</option>
+          </select>
+        </div>
+        <br />
+        <div style="padding-right: 3%">
+          <label for="metode">Pilih Metode Pembayaran :</label>
+          <br />
+          <div style="padding-right: 24%">
+            <select name="metode" id="metode">
+              <option value="Debit">Debit</option>
+              <option value="Kredit">Kredit</option>
+              <option value="Virtual">Virtual Acc</option>
+            </select>
+          </div>
+        </div>
+        <br />
+        <div style="padding-right: 10%">
+          <label for="norek">Masukkan Nomor Rek : </label>
+        </div>
+        <input type="text" name="norek" id="" maxlength="15" />
+        <br /><br />
+        <button class="btn btn-primary" id="send">Send</button>
+      </form>
+      <br />
+      <br />
+      <h3 class="nomor">*Nomor Virtual Account : 55053 + no.hp</h3>
+      <br />
+    </div>
+    <%- include('../layouts/footer.ejs'); %>
+    <script src="/js/topup.js"></script>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CASI || Homepage</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+      .card-body {
+        color: black;
+      }
+      a {
+        text-decoration: none !important;
+      }
+    </style>
+  </head>
+  <body>
+    <%- include('../layouts/navbar.ejs'); %>
+    <div style="text-align: center">
+      <h3>Saldo :</h3>
+      <label id="saldo" for=""></label>
+    </div>
+    <form class="topup" action="">
+      <div class="container">
+        <div class="select">
+          <div style="padding-bottom: 5%">
+            <h3>Tarik Saldo</h3>
+          </div>
+          <p>Pilih Bank :</p>
+          <select name="Bank">
+            <option value="BCA">BCA</option>
+            <option value="Mandiri">Mandiri</option>
+            <option value="BRI">BRI</option>
+            <option value="BNI">BNI</option>
+            <option value="CIMB">CIMB</option>
+          </select>
+        </div>
+        <div class="input">
+          <br />
+          <p>Nomor Rekening :</p>
+          <input type="text" name="" id="" />
+        </div>
+        <br />
+        <p>Jumlah Penarikan Saldo :</p>
+        <input
+          id="tariksaldo"
+          type="text"
+          placeholder="Amount"
+          required
+        /><br />
+        <p style="font-style: italic"><small>*No Charge Fee </small></p>
+        <div class="button">
+          <button id="btn_w" type="submit">Withdraw</button>
+        </div>
+      </div>
+    </form>
+    <%- include('../layouts/footer.ejs'); %>
+    <script src="/js/tariksaldo.js"></script>
+  </body>
+</html>
